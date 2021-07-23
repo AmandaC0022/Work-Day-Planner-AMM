@@ -21,26 +21,26 @@
 h1 {
     font-size:4em; 
     position: absolute; 
-    bottom:70%; 
+    top:10%; 
     left: 4%; 
     color:var(--ocean); 
     text-shadow: 1px 1px 3px var(--ocean); 
 }
+
 /* Current Date & Time Text */
 h3 {
     color: var(--ocean); 
     font-size: 2em;
     position: absolute;
-    bottom:20%;  
+    top:35%;  
     right:4%; 
     text-align: right;
     width:100%; 
     font-weight: bold;
     text-shadow: 1px 1px 3px var(--ocean); 
 }
-
 #datetime {
-    bottom:10%; 
+    top:45%; 
 }
 
 table {
@@ -59,12 +59,15 @@ th {
     font-size:2em; 
     border-radius: 5px;
 }
-
 td {
     border: 1px solid var(--white);
     border-radius: 5px;
 }
+.events {
+    border:none; 
+}
 
+/* Time & Save Columns  */
 #time, #save {
     width:20%; 
 }
@@ -73,21 +76,32 @@ td {
     font-size: 1.5em;
     color: var(--salmon); 
 }
-
-th:hover, td:hover {
+/* th:hover, td:hover {
     background-color: var(--sunflower);
-}
+} */
 
+/* Save Icon  */
 img {
     width:20%; 
     display:block; 
     margin:0 auto; 
 }
-
 img:hover {
     cursor: pointer;
-    color: black; 
 }
+
+input {
+    width: 99%; 
+    height:35px; 
+    background-color: var(--ocean);
+    color:var(--white); 
+    border:1px solid var(--white);
+    border-radius: 5px;
+}
+input:focus {
+    background-color: var(--bluegem);
+}
+
 
 @media only screen and (max-width: 776px) {
     h3 {
