@@ -3,7 +3,7 @@
     --bluegem:#4ecdc4; 
     --white:#f7fff7; 
     --salmon:#ff6b6b; 
-    --sunflower:#ffe66d; 
+    --sunflower:#e6c41b; 
 }
 
 * {
@@ -11,7 +11,7 @@
     font-size: 14px; 
 }
 
-img {
+#planner-image {
     width:100%; 
     position:relative; 
     z-index: -1; 
@@ -76,6 +76,17 @@ td {
 
 th:hover, td:hover {
     background-color: var(--sunflower);
+}
+
+img {
+    width:20%; 
+    display:block; 
+    margin:0 auto; 
+}
+
+img:hover {
+    cursor: pointer;
+    color: black; 
 }
 
 @media only screen and (max-width: 776px) {
