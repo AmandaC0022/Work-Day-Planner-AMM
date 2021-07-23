@@ -5,3 +5,7 @@
     --salmon:#ff6b6b; 
     --sunflower:#ffe66d; 
 }
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
