@@ -50,9 +50,11 @@ table {
     border: 1px solid var(--white); 
 }
 
+/* Table Header & Table Data */
 th, td {
     border: 1px solid var(--white);
     color: var(--salmon); 
+    height:30px; 
 }
 
 th:hover, td:hover {
@@ -67,7 +69,7 @@ th:hover, td:hover {
         top:40%; 
         right:0; 
     }
-    
+
     #datetime {
         top:50%; 
     }
