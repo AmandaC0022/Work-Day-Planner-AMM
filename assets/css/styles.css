@@ -10,15 +10,6 @@
     font-family: 'Nunito', sans-serif;
     font-size: 14px; 
 }
-/* Amanda's Day Planner Text */
-h1 {
-    font-size:4em; 
-    position: absolute; 
-    top:5%; 
-    left: 4%; 
-    color:var(--ocean); 
-    text-shadow: 1px 1px 3px var(--ocean); 
-}
 
 img {
     width:100%; 
@@ -26,12 +17,21 @@ img {
     z-index: -1; 
     opacity: 0.7;
 }
+/* Amanda's Day Planner Text */
+h1 {
+    font-size:4em; 
+    position: absolute; 
+    bottom:70%; 
+    left: 4%; 
+    color:var(--ocean); 
+    text-shadow: 1px 1px 3px var(--ocean); 
+}
 /* Current Date & Time Text */
 h3 {
     color: var(--ocean); 
     font-size: 2em;
     position: absolute;
-    top:40%; 
+    bottom:20%;  
     right:4%; 
     text-align: right;
     width:100%; 
@@ -40,7 +40,7 @@ h3 {
 }
 
 #datetime {
-    top:50%; 
+    bottom:10%; 
 }
 
 table {
@@ -48,13 +48,30 @@ table {
     background-color: var(--ocean);
     /* border-collapse: collapse; */
     border: 1px solid var(--white); 
+    border-radius: 5px;
 }
 
 /* Table Header & Table Data */
-th, td {
+th {
     border: 1px solid var(--white);
     color: var(--salmon); 
     height:30px; 
+    font-size:2em; 
+    border-radius: 5px;
+}
+
+td {
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+#time, #save {
+    width:20%; 
+}
+.time {
+    text-align:center; 
+    font-size: 1.5em;
+    color: var(--salmon); 
 }
 
 th:hover, td:hover {
@@ -63,22 +80,30 @@ th:hover, td:hover {
 
 @media only screen and (max-width: 776px) {
     h3 {
-        font-size: 2em;
+        font-size: 1.5em;
         width:100%; 
         text-align:center; 
-        top:40%; 
         right:0; 
+        bottom:50%; 
     }
 
     #datetime {
-        top:50%; 
+        bottom: 40%; 
     }
 
     h1 {
         width:100%; 
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
-        top: 8%; 
         left:0; 
+        bottom:80%; 
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    th, .time {
+        font-size:1.5em; 
     }
 }
