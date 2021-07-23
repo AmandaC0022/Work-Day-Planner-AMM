@@ -10,7 +10,7 @@
     font-family: 'Nunito', sans-serif;
     font-size: 14px; 
 }
-
+/* Amanda's Day Planner Text */
 h1 {
     font-size:4em; 
     position: absolute; 
@@ -26,7 +26,7 @@ img {
     z-index: -1; 
     opacity: 0.7;
 }
-
+/* Current Date & Time Text */
 h3 {
     color: var(--ocean); 
     font-size: 2em;
@@ -43,3 +43,13 @@ h3 {
     top:70%; 
 }
 
+table {
+    width: 100%; 
+    background-color: var(--ocean);
+    /* border-collapse: collapse; */
+    border: 1px solid var(--white); 
+}
+
+th, td {
+    border: 1px solid var(--white);
+}
