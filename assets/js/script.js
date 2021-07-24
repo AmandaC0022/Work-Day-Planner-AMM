@@ -10,28 +10,17 @@ $(document).ready(function(){
     datetime = $('#datetime')
     update();
     setInterval(update, 1000);
-});
+}); 
 
-
-//when user types something into events and when the user clicks the save icon, the text is saved into local storage and is saved in the text field. Text color changes to salmon when the text is saved  
-
-// YAY!!! IT WORKS!!! 
+// Saves User Input for first row to Local Storage  This works! Don't mess with it! 
 $(".save").on("click", function() {
-    var eventInput = $("#event-input").val(); 
-    localStorage.setItem("event", eventInput); 
+    var eventInput = $("#input8AM").val(); 
+    localStorage.setItem("Event 8AM", eventInput); 
     console.log(eventInput);  
 })
-
-var newEvent = localStorage.getItem('event');
-$("#event-input").attr("placeholder", newEvent); 
-
-
-// $("*").on("click", function() {
-//     var newEvent = localStorage.getItem('event');
-//     $(".event-input").placeholder = "It Works!"; 
-//     console.log(newEvent);
-// })
-// When you refresh the page, the text is still there
+//user input is saved within the table 
+var newEvent = localStorage.getItem('Event 8AM');
+    $("#input8AM").attr("placeholder", newEvent); 
 
 //link current time to time table column
 

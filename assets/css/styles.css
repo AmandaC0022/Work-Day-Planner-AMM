@@ -110,11 +110,11 @@ input:focus {
         width:100%; 
         text-align:center; 
         right:0; 
-        bottom:50%; 
+        top:25%; 
     }
 
     #datetime {
-        bottom: 40%; 
+        top: 35%; 
     }
 
     h1 {
@@ -122,7 +122,7 @@ input:focus {
         font-size: 2em;
         text-align: center;
         left:0; 
-        bottom:80%; 
+        top:10%; 
     }
 
     table {
