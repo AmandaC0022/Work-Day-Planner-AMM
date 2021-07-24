@@ -1,4 +1,4 @@
-//diplays current Time & Date
+// diplays current Time & Date
 var datetime = null,
         date = null;
 
@@ -12,8 +12,25 @@ $(document).ready(function(){
     setInterval(update, 1000);
 });
 
-//when user types something into events and when the user clicks the save icon, the text is saved into local storage and is saved in the text field. Text color changes to salmon when the text is saved 
 
+//when user types something into events and when the user clicks the save icon, the text is saved into local storage and is saved in the text field. Text color changes to salmon when the text is saved  
+
+// YAY!!! IT WORKS!!! 
+$(".save").on("click", function() {
+    var eventInput = $("#event-input").val(); 
+    localStorage.setItem("event", eventInput); 
+    console.log(eventInput);  
+})
+
+var newEvent = localStorage.getItem('event');
+$("#event-input").attr("placeholder", newEvent); 
+
+
+// $("*").on("click", function() {
+//     var newEvent = localStorage.getItem('event');
+//     $(".event-input").placeholder = "It Works!"; 
+//     console.log(newEvent);
+// })
 // When you refresh the page, the text is still there
 
 //link current time to time table column
