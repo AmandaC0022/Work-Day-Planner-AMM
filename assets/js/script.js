@@ -12,15 +12,20 @@ $(document).ready(function(){
     setInterval(update, 1000);
 }); 
 
+var time8AM = $("#time8AM"); 
+var input8AM = $("#input8AM"); 
+var save = $(".save"); 
+
 // Saves User Input for first row to Local Storage  This works! Don't mess with it! 
-$(".save").on("click", function() {
-    var eventInput = $("#input8AM").val(); 
-    localStorage.setItem("Event 8AM", eventInput); 
-    console.log(eventInput);  
+$(".save").on("click", function() {  
+
+    localStorage.setItem("Event 8AM", input8AM.val()); 
 })
+
 //user input is saved within the table 
-var newEvent = localStorage.getItem('Event 8AM');
-    $("#input8AM").attr("placeholder", newEvent); 
+var newEvent8AM = localStorage.getItem("Event 8AM");
+
+$("#input8AM").attr("placeholder", newEvent8AM); 
 
 //link current time to time table column
 
