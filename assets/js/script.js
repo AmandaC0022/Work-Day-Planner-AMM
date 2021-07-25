@@ -122,22 +122,42 @@ allData[9].input.attr("placeholder", event5PM);
 
 //link current time to time table column
 
-//round the current time down so if it is 10:30, the 10AM column is highlighted / Math. method? 
+// This displays the current hour 
 var hour = moment().hour(); 
 console.log(hour); 
 
-//Current time row background color changes to bluegem 
+var timeIDs = [$("#time8AM"), $("#time9AM"), $("#time10AM"), $("#time11AM"), $("#time12PM"), $("#time1PM"), $("#time2PM"), $("#time3PM"), $("#time4PM"), $("#time5PM")]; 
+
 function changeBackground() {
     if (hour === 8) {
-       $("#first-row").addClass(".currentTime"); 
-}
-
-changeBackground; 
-
-//past time rows background color changes to ocean and opacity is low 
-
-// future time rows background color is lightblue 
-
-//current time row background is bluegem
-
-//if you have time, figure out how to populate the table in JS instead of writing it in HTML. Dry Code! 
+       timeIDs[0].addClass("currentTime");
+    }
+    if (hour === 9) {
+        timeIDs[1].addClass("currentTime"); 
+    }
+    if (hour === 10) {
+        timeIDs[2].addClass("currentTime"); 
+    }
+    if (hour === 11) {
+        timeIDs[3].addClass("currentTime"); 
+    }
+    if (hour === 12) {
+        timeIDs[4].addClass("currentTime"); 
+    }
+    if (hour === 1) {
+        timeIDs[5].addClass("currentTime"); 
+    }
+    if (hour === 2) {
+        timeIDs[6].addClass("currentTime"); 
+    }
+    if (hour === 3) {
+        timeIDs[7].addClass("currentTime"); 
+    }
+    if (hour === 4) {
+        timeIDs[8].addClass("currentTime"); 
+    }
+    if (hour === 5) {
+        timeIDs[9].addClass("currentTime"); 
+    }
+}; 
+changeBackground(); 
