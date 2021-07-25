@@ -76,13 +76,17 @@ var allData = [
     }
 ]; 
 
-// Saves User Input for first row to Local Storage  This works! Don't mess with it! 
+// Saves User Input for first row to Local Storage  Does weird things when I save all of them... It writes over the old placeholders when I save a new one.  
 
 // $(".save").on("click", function() { 
 //     for(var i=0; i<= allData.length; i++) {
 //         localStorage.setItem(allData[i].lSKey, allData[i].input.val());
 //     } 
 // }) 
+
+//There has to be a way to minimize this code... research forEach function 
+
+// When I put this in a for loop, it constantly writes over all of the local storage Items. 
 
 allData[0].save.on("click", function(){
     localStorage.setItem(allData[0].lSKey, allData[0].input.val()); 
