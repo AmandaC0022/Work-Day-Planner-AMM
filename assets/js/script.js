@@ -127,34 +127,56 @@ var hour = moment().hour();
 console.log(hour); 
 
 var timeIDs = [$("#time8AM"), $("#time9AM"), $("#time10AM"), $("#time11AM"), $("#time12PM"), $("#time1PM"), $("#time2PM"), $("#time3PM"), $("#time4PM"), $("#time5PM")]; 
+var arr = timeIDs.slice(2);
+arr.forEach(element => element.addClass("futureTime")); 
 
 function changeBackground() {
     if (hour === 8) {
        timeIDs[0].addClass("currentTime");
+       var arr = timeIDs.slice(1);
+       arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 9) {
         timeIDs[1].addClass("currentTime"); 
+        var arr = timeIDs.slice(2);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 10) {
         timeIDs[2].addClass("currentTime"); 
+        console.log(timeIDs[2]);
+        var arr = timeIDs.slice(3);
+        console.log(arr); 
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 11) {
         timeIDs[3].addClass("currentTime"); 
+        var arr = timeIDs.slice(4);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 12) {
-        timeIDs[4].addClass("currentTime"); 
+        timeIDs[4].addClass("currentTime");
+        var arr = timeIDs.slice(5);
+        arr.forEach(element => element.addClass("futureTime")); 
     }
     if (hour === 1) {
         timeIDs[5].addClass("currentTime"); 
+        var arr = timeIDs.slice(6);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 2) {
         timeIDs[6].addClass("currentTime"); 
+        var arr = timeIDs.slice(7);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 3) {
         timeIDs[7].addClass("currentTime"); 
+        var arr = timeIDs.slice(8);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 4) {
         timeIDs[8].addClass("currentTime"); 
+        var arr = timeIDs.slice(9);
+        arr.forEach(element => element.addClass("futureTime"));
     }
     if (hour === 5) {
         timeIDs[9].addClass("currentTime"); 
