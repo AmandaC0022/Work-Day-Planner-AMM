@@ -123,8 +123,16 @@ allData[9].input.attr("placeholder", event5PM);
 //link current time to time table column
 
 //round the current time down so if it is 10:30, the 10AM column is highlighted / Math. method? 
+var hour = moment().hour(); 
+console.log(hour); 
 
 //Current time row background color changes to bluegem 
+function changeBackground() {
+    if (hour === 8) {
+       $("#first-row").addClass(".currentTime"); 
+}
+
+changeBackground; 
 
 //past time rows background color changes to ocean and opacity is low 
 
