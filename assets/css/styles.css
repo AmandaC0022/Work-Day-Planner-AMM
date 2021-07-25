@@ -1,10 +1,10 @@
 :root {
     --ocean:#1a535c; 
-    --bluegem:#38b1a9; 
-    --lightblue:#97ede7; 
+    --bluegem:#2e938c; 
+    --lightblue:#c0f0ed; 
     --white:#f7fff7; 
-    --salmon:#ff6b6b; 
-    --sunflower:#e6c41b; 
+    --salmon:#f48c8c; 
+    --sunflower:#dcb803; 
 }
 
 * {
@@ -25,7 +25,7 @@ h1 {
     top:10%; 
     left: 4%; 
     color:var(--ocean); 
-    text-shadow: 1px 1px 3px var(--ocean); 
+    text-shadow: 1px 1px 3px var(--bluegem); 
 }
 
 /* Current Date & Time Text */
@@ -38,7 +38,7 @@ h3 {
     text-align: right;
     width:100%; 
     font-weight: bold;
-    text-shadow: 1px 1px 3px var(--ocean); 
+    text-shadow: 1px 1px 3px var(--bluegem); 
 }
 #datetime {
     top:45%; 
@@ -77,9 +77,9 @@ td {
     font-size: 1.5em;
     color: var(--salmon); 
 }
-/* th:hover, td:hover {
+th:hover, td:hover {
     background-color: var(--sunflower);
-} */
+}
 
 /* Save Icon  */
 img {
@@ -101,7 +101,7 @@ input {
     border-radius: 5px;
 }
 input:focus {
-    background-color: var(--bluegem);
+    background-color: var(--sunflower);
 }
 
 ::placeholder {
@@ -111,7 +111,7 @@ input:focus {
 
 /* sets background colors for time states  */
 .currentTime {
-    background-color: var(--sunflower); 
+    background-color: var(--bluegem); 
 }
 .futureTime {
     background-color: var(--lightblue); 
